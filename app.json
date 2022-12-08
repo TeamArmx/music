@@ -1,0 +1,94 @@
+{
+    "name": "Video x Music Stream Bot",
+    "description": "Telegram bot for Streaming Video & Music trought the Telegram Group Video Chat, powered by PyTgCalls and Pyrogram",
+    "logo": "https://telegra.ph/file/18b88af791e36bf3c4259.jpg",
+    "keywords": [
+        "py-tgcalls",
+        "telegram bot",
+        "video stream",
+        "live stream",
+        "music stream",
+        "mongodb",
+        "pyrogram"
+    ],
+    "website": "https://t.me/FA9SH",
+    "repository": "https://github.com/USDDBOOT/Shadow",
+    "success_url": "https://t.me/KB_Shadow",
+    "env": {
+        "API_ID": {
+            "description": "قم بوضع الايبي ايدي هنا",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "قم بوضع الايبي هاش",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "قم بوضع توكن البوت الخاص بك هنا",
+            "required": true
+        },
+        "BOT_USERNAME": {
+            "description": "معرف البوت",
+            "required": false,
+            "value": "CHELP0BOT"
+        },
+        "ASSISTANT_USERNAME": {
+            "description": "معرف المساعد",
+            "required": false,
+            "value": ""
+        },
+        "SESSION_NAME": {
+            "description": "قم بوضع كود تيرمكس هنا",
+            "required": true
+        },
+        "SUDO_USERS": {
+            "description": "قم بوضع ايدي المطور الاساسي",
+            "required": true,
+            "value": "1970797144"
+        },
+        "GROUP_SUPPORT": {
+            "description": "ضع هنا يوزر جروبك بدون علامة @",
+            "required": true,
+            "value": "S150D"
+        },
+        "UPDATES_CHANNEL": {
+            "description": "ضع هنا يوزر قناتك بدون علامة @",
+            "required": true,
+            "value": "FA9SH"
+        },
+        "OWNER_NAME": {
+            "description": "ضع هنا يوزر المطور بدون علامة @",
+            "required": true,
+            "value": "KB_Shadow"
+        }, 
+        "MONGODB_URL": {
+            "description": "قاعدة البيانات",
+            "required": true,
+            "value": "mongodb+srv://vampir:Al2552001@cluster0.yeaoc.mongodb.net/vampir?retryWrites=true&w=majority"
+        },
+        "UPSTREAM_REPO": {
+            "description": "لا تغيره",
+            "required": true,
+            "value": "https://github.com/Ttqqk/N"
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "heroku/nodejs"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+    "stack": "container"
+}
